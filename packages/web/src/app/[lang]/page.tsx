@@ -39,8 +39,7 @@ const IndexPage = (props: IndexPageProps) => {
     lang: props.params.lang,
   };
 
-  const introText =
-    `Bizler bilişim sektöründe halihazırda profesyonel olarak yer alan
+  const introText = `Bizler bilişim sektöründe halihazırda profesyonel olarak yer alan
 gönüllüleriz. 2015'den bu yana yapmış olduğumuz çalışmalarla
 kişilerin, firmaların, resmi kurumların ve sivil toplum
 kuruluşlarının kullanımına yönelik açık kaynak kodlu teknolojilerin
@@ -70,9 +69,9 @@ açık kaynaklı çözümlerle yaşadığımız topluma katkı sağlamak için
             Açık Yazılım Ağı <br className="hidden sm:inline" />
             Bilişim Meta-Topluluğu
           </h1>
-          <p className="max-w-[980px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
+          <div className="max-w-[980px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
             <MDXRemote source={introText} />
-          </p>
+          </div>
         </div>
         <div className="flex gap-4">
           <Link
@@ -83,12 +82,7 @@ açık kaynaklı çözümlerle yaşadığımız topluma katkı sağlamak için
           >
             Hakkında
           </Link>
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href={siteConfig.links.github}
-            className={buttonVariants({ variant: "outline", size: "lg" })}
-          >
+          <Link target="_blank" rel="noreferrer" href={siteConfig.links.github} className={buttonVariants({ variant: "outline", size: "lg" })}>
             GitHub
           </Link>
         </div>
